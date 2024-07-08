@@ -14,7 +14,7 @@
         alt="profile_photo"
       />
     </div>
-    <h2 class="">RESUME</h2>
+    <h2 class="ml-auto w-50">RESUME</h2>
     <section class="introduction">
         <div class="container">
           <p class="introduction-text w-50">
@@ -105,50 +105,3 @@
       </footer>
   </body>
 </html>
-
-<!-- 第一版助教修正 -->
-
-<!-- Q1: 我的<footer>區塊卡關了它覆蓋住中間的頁面，實在找不出是哪裡出了問題
-
-  A1: 這邊看到同學在 ul 有設定 height: 60px;，首先盡量不要再內容區塊中設定固定高度，除非是圖片 img；固定高度後，內容雖然超過設定的高度會顯示出來，不過在空間配置上，接下來的元素會依序排列，所以才會有 footer 標籤往上排列呈現，其實是高度到了，依序排列。這邊建議同學不要固定高度。
-   -->
-
-<!--   
-  這邊針對作業給同學一些建議:
-  
-  1. 可以在 body 設定 line-height:1.5，這樣就不用在其他元素上重複做設定了 -->
-<!--   
-  2. 建議可以按照設計稿給的寬度去做整個版面的寬度設定，並且設定 margin: 0 auto; 讓整個版面可以置中 -->
-
-<!-- 3. h1文字預設已經從左開始排、也不需要 margin-left -->
-
-<!-- 4. h2 可以不用固定寬度喔 5. .header img 不用設寬高，圖片已經是設計稿的大小 6.
-.introduction 建議不要固定高度，可以用 padding
-去做推擠，任何元素，除了圖片有要求或是其他設計稿的特別需求外，都盡量不要固定高度，像是
-h2 標籤、footer 等也是喔 7. ul 內都要是 li 組合而成的喔，架構建議可以使用以下:
-
-<section class="container info">
-  <h3 class="info-title">Vito Evans</h3>
-
-  <ul class="info-content">
-    <li>456 Walnut Avenue, Someville, USA</li>
-
-    <li><a class="link" herf="tel:+1 123 456 7890">+1 123 456 7890</a></li>
-
-    <li>
-      <a class="link" href="mailto:info@hexschool.com">info@hexschool.com</a>
-    </li>
-
-    <li><a class="link" href="#">www.infohexschool.com</a></li>
-  </ul>
-  …
-</section>
-
-8. Vito Evans 底下的電話跟 email 建議可以使用 a 標籤並加上 emmet
-語法，點擊後可以產生動作，增加使用者體驗，範例如下:
-
-<a href="tel+1 123 456 7890">+1 123 456 7890</a>
-
-<a href="mailto:info@hexschool.com">info@hexschool.com</a>
-
-9. footer 的內容建議也可以使用 ul li 結構 -->
