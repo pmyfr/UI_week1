@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-160">VITO</h1>
+      <img
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true"
+        alt="profile_photo"
+      />
+    </div>
+    <h2 class="">RESUME</h2>
+    <section class="introduction">
+        <div class="container">
+          <p class="introduction-text w-50">
+            I'm Vito, a UI Designer with 5+ years of experience. I create
+            visually appealing interfaces for web and mobile apps. Proficient in
+            Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy
+            collaborating with others to create high-quality products.
+          </p>
+        </div>
+      </section>
+
+      <section class="container">
+        <h3 class="mt-80">Vito Evans</h3>
+        <ul class="personal-info">
+          <li class="">456 Walnut Avenue, Someville, USA</li>
+          <li><a href="tel+1 123 456 7890">+1 123 456 7890</a></li>
+          <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
+          <li><a href="www.infohexschool.com">www.infohexschool.com</a></li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <span>2014-2018</span>
+          </li>
+          <li>
+            Bachelor of Science in Business Administration, University of
+            California, Los Angeles
+          </li>
+          <li>
+            <span class="span">2012-2014</span>
+          </li>
+          <li>
+            Associate of Arts in Graphic Design, San Francisco State University
+          </li>
+          <span class="span">2008-2012</span>
+          <li>High School Diploma, Lincoln High School</li>
+        </ul>
+
+        <h3>Work</h3>
+        <ul>
+          <li>
+            <span class="span">2018-2021</span>
+          </li>
+          <li>Marketing Manager, ABC Company</li>
+          <li>
+            <span class="span">2016-2018</span>
+          </li>
+          <li>Sales Associate, XYZ Corporation</li>
+          <li>
+            <span class="span">2014-2016</span>
+          </li>
+          <li>Customer Service Representative, QRS Inc.</li>
+        </ul>
+
+        <h3>Awards</h3>
+        <ul>
+          <li class="mt-8">Best in Show Award, National Advertising Awards, 2020</li>
+          <li class="mt-12">Honorable Mention, International Design Competition, 2019</li>
+          <li class="mt-12">People's Choice Award, Local Art Exhibition, 2018</li>
+        </ul>
+      </section>
+    </div>
+      <footer class="profile-links">
+        <ul class="links-container">
+          <li>
+            <a href="tel+1 123 456 7890"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true"
+                alt="facebook-link"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:info@hexschool.com" class="mr-40 ml-40"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
+                alt="instagram-link"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
+                alt="line-link"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+  </body>
+</html>
+
+<!-- 第一版助教修正 -->
+
+<!-- Q1: 我的<footer>區塊卡關了它覆蓋住中間的頁面，實在找不出是哪裡出了問題
+
+  A1: 這邊看到同學在 ul 有設定 height: 60px;，首先盡量不要再內容區塊中設定固定高度，除非是圖片 img；固定高度後，內容雖然超過設定的高度會顯示出來，不過在空間配置上，接下來的元素會依序排列，所以才會有 footer 標籤往上排列呈現，其實是高度到了，依序排列。這邊建議同學不要固定高度。
+   -->
+
+<!--   
+  這邊針對作業給同學一些建議:
+  
+  1. 可以在 body 設定 line-height:1.5，這樣就不用在其他元素上重複做設定了 -->
+<!--   
+  2. 建議可以按照設計稿給的寬度去做整個版面的寬度設定，並且設定 margin: 0 auto; 讓整個版面可以置中 -->
+
+<!-- 3. h1文字預設已經從左開始排、也不需要 margin-left -->
+
+<!-- 4. h2 可以不用固定寬度喔 5. .header img 不用設寬高，圖片已經是設計稿的大小 6.
+.introduction 建議不要固定高度，可以用 padding
+去做推擠，任何元素，除了圖片有要求或是其他設計稿的特別需求外，都盡量不要固定高度，像是
+h2 標籤、footer 等也是喔 7. ul 內都要是 li 組合而成的喔，架構建議可以使用以下:
+
+<section class="container info">
+  <h3 class="info-title">Vito Evans</h3>
+
+  <ul class="info-content">
+    <li>456 Walnut Avenue, Someville, USA</li>
+
+    <li><a class="link" herf="tel:+1 123 456 7890">+1 123 456 7890</a></li>
+
+    <li>
+      <a class="link" href="mailto:info@hexschool.com">info@hexschool.com</a>
+    </li>
+
+    <li><a class="link" href="#">www.infohexschool.com</a></li>
+  </ul>
+  …
+</section>
+
+8. Vito Evans 底下的電話跟 email 建議可以使用 a 標籤並加上 emmet
+語法，點擊後可以產生動作，增加使用者體驗，範例如下:
+
+<a href="tel+1 123 456 7890">+1 123 456 7890</a>
+
+<a href="mailto:info@hexschool.com">info@hexschool.com</a>
+
+9. footer 的內容建議也可以使用 ul li 結構 -->
